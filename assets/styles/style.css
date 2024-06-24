@@ -1,0 +1,269 @@
+/*
+PALETA DE CORES:
+
+VERMELHO: red;
+BRANCO: white;
+PRETO: black;
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/bg-body.png);
+}
+
+/*CABEÇALHO*/
+
+#main-header{
+    background: url(../img/bg-header.png) red center;
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0);
+    transition: 0.3s;
+    margin-bottom: 50px;
+}
+
+#main-header span{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#main-header h2{
+    margin-top: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+.logo{
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 100%;
+    transition: 0.3s;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+}
+
+.logo:hover{
+    scale: 105%
+}
+
+/*Contato*/
+#header-contato{
+    margin-top: 5px;
+    background: black;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+#header-contato:hover{
+    scale: 110%
+}
+#header-contato i{
+    color: lime;
+}
+
+/*FIM CABEÇALHO*/
+
+/*CONTEUDO PRINCIPAL*/
+
+#main-content{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.content-title{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.post{
+    float: left;
+}
+
+.post h2{
+    color: rgba(255, 255, 255, 0.915);
+    text-align: center;
+}
+
+.videos{
+    width: 640px;
+    border: 5px solid rgb(47, 47, 47);
+    border-radius: 15px;
+    float: left;
+}
+
+/*Contato*/
+#contato{
+    margin-left: 100px;
+    background-color: #c3c3c3;
+    padding: 25px;
+    width: 500px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(47, 47, 47);
+    float: right;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+#contato h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+#contato input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#contato button{
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#contato button:hover{
+    scale: 105%;
+    cursor: pointer;
+}
+
+/*FIM CONTEUDO PRINCIPAL*/
+
+#rights{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+/*Celular*/
+@media (max-width: 600px){
+
+    *{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: 0px;
+    }
+    
+    /*Cabeçalho*/
+    #main-header{
+        background: url(../img/bg-header-smarthphone.png) red right;
+    }
+    
+    .logo{
+        width: 200px;
+    }
+
+    #main-header h2{
+        margin-top: 10px;
+        color: white;
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    #header-contato{
+        font-size: 16px;
+    }
+
+    /*Fim Cabeçalho*/
+
+    /*Conteudo principal*/
+    #main-content{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-title{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .post{
+        float: none;
+    }
+
+    .post h2{
+        color: rgba(255, 255, 255, 0.915);
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .videos{
+        width: 320px;
+        border: 5px solid rgb(47, 47, 47);
+        border-radius: 15px;
+        float: left;
+    }
+
+    #contato{
+        padding: 15px;
+        width: 250px;
+        margin-left: 0px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 800;
+        color: rgb(47, 47, 47);
+        float: none;
+        margin-top: 20px;
+    }
+
+    #contato h2{
+        font-size: 18px;
+    }
+
+    #contato input{
+        font-size: 15px;
+    }
+
+    #contato button{
+        font-size: 15px;
+    }
+    /*FIM Conteudo principal*/
+
+}
+
+/*Geral*/
+.no-border{
+    border: none;
+}
+
+/*Ajustes de erro*/
+
+.empty-input{
+    border: 1px solid red;
+}
+
