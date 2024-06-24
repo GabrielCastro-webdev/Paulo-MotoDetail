@@ -1,1 +1,2 @@
-Site que eu fiz para aprender e ajudar um parente.
+Site que eu fiz para treinar e ajudar um parente.
+Feito em algumas horas.
